@@ -1,6 +1,6 @@
 # QuoTe: Quality-oriented Testing for DL Systems
  
-This repository contains code for the paper [Copy, Right? A Testing Framework for Copyright Protection of Deep Learning Models](https://arxiv.org/abs/2112.05588) (S&P'22).  and  [Copy, Right? A Testing Framework for Copyright Protection of Deep Learning Models](https://arxiv.org/abs/2112.05588) (S&P'22). 
+This repository contains code for the papers [QuoTe: Quality-oriented Testing for Deep Learning Systems] and [RobOT: Robustness-Oriented Testing for Deep Learning Systems](https://doi.org/10.1109/ICSE43902.2021.00038) (ICSE'21). 
 
 
 ## Prerequisite (Py3 & TF2) 
@@ -39,9 +39,9 @@ $ python -m ipykernel install --name tf2-gpu
 See the `README.md` in each directory. 
 
 
-## Publication 
+## Publications 
 ```
-@inproceedings{deepjudge2022,
+@inproceedings{quote2022,
   author    = {Jialuo Chen and
                Jingyi Wang and
                Tinglan Peng and
@@ -51,10 +51,26 @@ See the `README.md` in each directory.
                Xingjun Ma and
                Bo Li and
                Dawn Song},
-  title     = {Copy, Right? A Testing Framework for Copyright Protection of Deep Learning Models},
-  booktitle = {43rd IEEE Symposium on Security and Privacy, S&P 2022, San Francisco, CA, USA, May 22-26, 2022},
+  title     = {QuoTe: Quality-oriented Testing for Deep Learning Systems},
+  booktitle = {},
   year      = {2022},
 }
 ```
+```
+@inproceedings{robot2011,
+  author    = {Jingyi Wang and
+               Jialuo Chen and
+               Youcheng Sun and
+               Xingjun Ma and
+               Dongxia Wang and
+               Jun Sun and
+               Peng Cheng},
+  title     = {RobOT: Robustness-Oriented Testing for Deep Learning Systems},
+  booktitle = {43rd {IEEE/ACM} International Conference on Software Engineering,
+               {ICSE} 2021, Madrid, Spain, 22-30 May 2021},
+  year      = {2021},
+}
+```
+
 
 
