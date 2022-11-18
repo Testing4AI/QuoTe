@@ -21,7 +21,8 @@ $ python -m ipykernel install --name tf2-gpu
 ```
 
 ## Work Flow 
-<img src="https://user-images.githubusercontent.com/95740042/202668038-7f70b035-d065-4417-b7ae-f83e8abfab20.png" alt="quote" style="zoom:10%;" />
+![Snipaste_2022-11-18_17-38-26](https://user-images.githubusercontent.com/95740042/202670553-002de81e-20f5-4a75-a9f6-1b56ce94d6e6.png)
+
 
 ## Files
 - `DeepJudge`: Our DeepJudge testing framework.
