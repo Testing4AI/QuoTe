@@ -64,8 +64,7 @@ See the `README.md` in each directory.
                Jun Sun and
                Peng Cheng},
   title     = {RobOT: Robustness-Oriented Testing for Deep Learning Systems},
-  booktitle = {43rd {IEEE/ACM} International Conference on Software Engineering,
-               {ICSE} 2021, Madrid, Spain, 22-30 May 2021},
+  booktitle = {43rd IEEE/ACM International Conference on Software Engineering, ICSE 2021, Madrid, Spain, 22-30 May 2021},
   year      = {2021},
 }
 ```
