@@ -41,16 +41,14 @@ See the `README.md` in each directory.
 
 ## Publications 
 ```
-@inproceedings{quote2022,
+@article{quote2022,
   author    = {Jialuo Chen and
                Jingyi Wang and
-               Tinglan Peng and
-               Youcheng Sun and
-               Peng Cheng and
-               Shouling Ji and
                Xingjun Ma and
-               Bo Li and
-               Dawn Song},
+               Youcheng Sun and
+               Jun Sun and
+               Peixin Zhang and
+               Peng Cheng},
   title     = {QuoTe: Quality-oriented Testing for Deep Learning Systems},
   booktitle = {},
   year      = {2022},
