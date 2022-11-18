@@ -1,6 +1,8 @@
 # QuoTe: Quality-oriented Testing for DL Systems
  
-This repository contains code for the papers [QuoTe: Quality-oriented Testing for Deep Learning Systems] and [RobOT: Robustness-Oriented Testing for Deep Learning Systems](https://doi.org/10.1109/ICSE43902.2021.00038) (ICSE'21). 
+This repository contains code for the papers [QuoTe: Quality-oriented Testing for Deep Learning Systems] 
+
+<!--and [RobOT: Robustness-Oriented Testing for Deep Learning Systems](https://doi.org/10.1109/ICSE43902.2021.00038) (ICSE'21). -->
 
 
 ## Prerequisite (Py3 & TF2) 
