@@ -27,18 +27,17 @@ $ python -m ipykernel install --name tf2-gpu
 
 
 ## Files
-- `DeepJudge`: Our DeepJudge testing framework.
-- `train_models`: train clean models and suspect models.
-- `watermarking-whitebox`: a TF2 implementation of [1]. ([Keras version](https://github.com/yu4u/dnn-watermark))
-- `watermarking-blackbox`: a TF2 implementation of [2]. 
-- `fingerprinting-blackbox`: a TF2 implementation of [3]. 
+- `Robustness`: Experiments for Robustness Property
+   - MNIST (image) / FASHION (image) / CIFAR10 (image) / SVHN (image) 
+- `Fairness`: Experiments for Fairness Property
+   - Census (tabular) / Credit (tabular) / Bank (tabular) / FairFace (image)    
 
-**Reference:** 
+<!-- **Reference:**  -->
 
 
 ## To Run
-
-See the `README.md` in each directory. 
+See the `README.md` in each directory for a quick start. 
+Example models are provided in the directory. 
 
 
 ## Publications 
