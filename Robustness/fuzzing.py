@@ -112,6 +112,6 @@ fols = np.array([item[0] for item in total_sets])
 advs = np.array([item[1].reshape(28,28,1) for item in total_sets])
 labels = np.array([item[2] for item in total_sets])
 
-np.savez('./FOL_Fuzz.npz', advs=advs, labels=labels, fols=fols)
+np.savez('./fuzz_results.npz', advs=advs, labels=labels, fols=fols)
 
 
