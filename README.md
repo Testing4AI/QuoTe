@@ -36,14 +36,15 @@ nohup jupyter notebook --ip 0.0.0.0 &
    - **Datasets**: MNIST (image) / FASHION (image) / CIFAR10 (image) / SVHN (image) 
 - #### **`Fairness`: Experiments for Fairness Property**
    - **Datasets**: Census (tabular) / Credit (tabular) / Bank (tabular) / FairFace (image)    
-- #### `utils`: utils for figure plotting
+- #### `utils`: Utils for figure plotting
 
 <!-- **Reference:**  -->
 
 
 ## To Run
 See the `README.md` in each directory for a quick start. 
-Example models are provided in the directory. 
+
+Example models are provided in the corresponding directory. 
 
 
 ## Publications 
