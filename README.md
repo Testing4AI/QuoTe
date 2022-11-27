@@ -36,7 +36,7 @@ nohup jupyter notebook --ip 0.0.0.0 &
    - MNIST (image) / FASHION (image) / CIFAR10 (image) / SVHN (image) 
 - `Fairness`: Experiments for Fairness Property
    - Census (tabular) / Credit (tabular) / Bank (tabular) / FairFace (image)    
-- `utils': utils for experiments [figure plotting ...] 
+- `utils`: utils for experiments [figure plotting ...] 
 
 <!-- **Reference:**  -->
 
