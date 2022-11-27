@@ -27,8 +27,8 @@ To run jupyter notebook on a sever:
 nohup jupyter notebook --ip 0.0.0.0 & 
 ```
 
-## Work Flow 
-![Snipaste_2022-11-18_17-38-26](https://user-images.githubusercontent.com/95740042/202670553-002de81e-20f5-4a75-a9f6-1b56ce94d6e6.png)
+<!-- ## Work Flow 
+![Snipaste_2022-11-18_17-38-26](https://user-images.githubusercontent.com/95740042/202670553-002de81e-20f5-4a75-a9f6-1b56ce94d6e6.png)-->
 
 
 ## Files
