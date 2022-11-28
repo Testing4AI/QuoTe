@@ -3,10 +3,8 @@ import tensorflow as tf
 import sys, os
 sys.path.append("../")
 import copy
-
 from tensorflow.python.platform import flags
 from scipy.optimize import basinhopping
-
 from data.census import census_data
 from data.credit import credit_data
 from data.bank import bank_data
