@@ -44,7 +44,7 @@ nohup jupyter notebook --ip 0.0.0.0 &
 ## To Run
 See the `README.md` in each directory for a quick start. 
 
-Example models are provided in the corresponding directory. 
+Example models are provided in the `trained_models` directory. 
 
 
 ## Publications 
