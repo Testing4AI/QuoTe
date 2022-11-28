@@ -18,7 +18,7 @@ if gpus:
     
 
 
-def select(values, n, s='best', k=10):
+def select(values, n, s='best', k=100):
     """
     n: the number of selected test cases. 
     s: strategy, ['best', 'random', 'kmst', 'gini']
