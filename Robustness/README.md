@@ -6,3 +6,17 @@
 
 4. running script robot.py 
 
+```
+├── CIFAR-10
+├── FASHION
+├── MNIST
+├── SVHN
+├── baseline
+├── model
+├── trained_models
+├── tutorials
+    ├── attack.py
+    ├── robot.py
+    └── gen_adv.py
+```
+
