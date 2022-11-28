@@ -301,3 +301,6 @@ for ep in range(EPOCH):
             print("Fairness requirement is reached: %s", str(fairness))
         else:
             print("Fairness requirement is not reached: %s", str(fairness))
+
+            
+            
