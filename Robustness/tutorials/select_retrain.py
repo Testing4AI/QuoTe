@@ -17,31 +17,8 @@ if gpus:
         
     
 
-def select(foscs, n, s='best', k=1000):
-  
-    ranks = np.argsort(foscs)
-    # we choose test cases with small and large fols. 
-    if s == 'best':
-        h = n//2
-        return np.concatenate((ranks[:h],ranks[-h:]))
 
-    # we choose test cases with small and large fols.   
-    elif s == 'kmst':
-        index = []
-        section_w = len(ranks) // k
-        section_nums = n // section_w
-        indexes = random.sample(list(range(k)), section_nums)
-        for i in indexes:
-            block = ranks[i*section_w: (i+1)*section_w]
-            index.append(block)
-        return np.concatenate(np.array(index))
-
-    # This is for gini strategy. There is little different from DeepGini paper. See function ginis() in metrics.py 
-    else:
-        return ranks[:n]    
-    
-
-def select(values, n, s='best', k=4):
+def select(values, n, s='best', k=10):
     """
     n: the number of selected test cases. 
     s: strategy, ['best', 'random', 'kmst', 'gini']
@@ -75,6 +52,16 @@ def select(values, n, s='best', k=4):
     # This is for gini strategy. There is little difference from DeepGini paper. See function ginis() in metrics.py 
     else: 
         return ranks[:n]  
+    
+#         index = []
+#         section_w = len(ranks) // k
+#         section_nums = n // section_w
+#         indexes = random.sample(list(range(k)), section_nums)
+#         for i in indexes:
+#             block = ranks[i*section_w: (i+1)*section_w]
+#             index.append(block)
+#         return np.concatenate(np.array(index))
+    
     
     
 def load_mnist(path="./mnist.npz"):
