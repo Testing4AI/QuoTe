@@ -171,10 +171,9 @@ def model_retrain_base(dataset, X_original, Y_original, X_additional, Y_addition
     eval_params = {'batch_size': 256}
     accuracy = model_eval(sess, x, y, predictions, X_original, Y_original, args=eval_params)
     print('Retrained Test accuracy {0}'.format(accuracy))
-    print(a, b)
 #     print(get_estimate(conf, sess, x, predictions, sens_param, random_samples))
 #     print(get_estimate(conf, sess, x, predictions, sens_param, X_original[:3000]))
-    return sess, x, preds, a_max, b_max
+    return sess, x, preds
 
 
 
@@ -288,8 +287,7 @@ for nums in [10]:
         Y_additional = np.array(Y_additional)
 
         sess.close()
-        sess, x, preds, a, b = model_retrain_base(dataset, X_original, Y_original, X_additional, Y_additional, 
-                                   input_shape, nb_classes)
+        sess, x, preds = model_retrain_base(dataset, X_original, Y_original, X_additional, Y_additional, input_shape, nb_classes)
     
         save_path = './retrained_models/'+str(sens_param)+'/'+str(s)
         saver = tf.train.Saver()
