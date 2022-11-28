@@ -6,7 +6,7 @@
 
 4. running script robot.py 
 
-```
+```shell
 ├── CIFAR-10
 ├── FASHION
 ├── MNIST
