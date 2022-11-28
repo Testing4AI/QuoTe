@@ -32,9 +32,9 @@ nohup jupyter notebook --ip 0.0.0.0 &
 
 
 ## Files
-- #### **`Robustness`: Experiments for Robustness Property**
+- #### **`Robustness`: Experiments for Model Robustness Property**
    - **Datasets**: MNIST (image) / FASHION (image) / CIFAR-10 (image) / SVHN (image) 
-- #### **`Fairness`: Experiments for Fairness Property**
+- #### **`Fairness`: Experiments for Model Fairness Property**
    - **Datasets**: Census (tabular) / Credit (tabular) / Bank (tabular) / FairFace (image)    
 - #### `utils`: Utils for figure plotting
 
