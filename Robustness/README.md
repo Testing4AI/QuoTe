@@ -22,7 +22,7 @@ nohup python ./tutorials/select_retrain.py > retrain.log 2>&1 &
 ├── model               # model structures and train models  
 ├── trained_models      # trained example models. 
 ├── tutorials           # scripts for our experiments   
-    ├── attack.py                # implementation of traditional adversarial attacks, including FGSM and PGD. 
+    ├── attack.py                # batch adversarial attacks (FGSM and PGD)
     ├── evaluate_robustness.py   # evaluate model empirical robustness   
     ├── fuzzing.py               # generate test cases
     ├── gen_adv.py               # generate adversarial examples 
