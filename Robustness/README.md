@@ -1,17 +1,28 @@
-1. Generate Adversarial Examples (FGSM, PGD, C&W supported)
+## Robustness Experiments 
 
-2. Test Case Selection for Model Retraining (DeepGini, KM-ST, BE-ST)
- 
-3. Fol-guided Fuzzing for Test Case Generation
+Python scripts can be run directly in the shell:
+```shell
+nohup python ./MNIST/train_model.py > training.log 2>&1 &
+```
+```shell
+nohup python ./tutorials/gen_adv.py > advgen.log 2>&1 &
+nohup python ./tutorials/select_retrain.py > retrain.log 2>&1 &
+```
 
-4. running script robot.py 
+### Datasets
+- MNIST  : https://www.kaggle.com/datasets/uciml/adult-census-income
+- FASHION  : https://www.kaggle.com/datasets/uciml/german-credit
+- SVHN : https://www.kaggle.com/datasets/henriqueyamahata/bank-marketing
+- CIFAR-10       : https://github.com/joojs/fairface
 
+
+### File Strucutures
 ```shell
 ├── CIFAR-10
 ├── FASHION
 ├── MNIST
 ├── SVHN
-├── baseline
+├── baseline        # baseline testing methods
 ├── model
 ├── trained_models
 ├── tutorials
@@ -19,4 +30,7 @@
     ├── robot.py    # iteratively testing for enhacing model robustness to reach the requirement.  
     └── gen_adv.py  # generate adversarial examples automatically. 
 ```
+
+
+
 
