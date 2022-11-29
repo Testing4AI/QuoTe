@@ -1,6 +1,6 @@
 # QuoTe: Quality-oriented Testing for DL Systems
  
-This repository contains code for the paper [QuoTe: Quality-oriented Testing for Deep Learning Systems] 
+This repository contains code for the paper "QuoTe: Quality-oriented Testing for Deep Learning Systems", an extension of our previous work [RobOT](https://doi.org/10.1109/ICSE43902.2021.00038) (ICSE'21). 
 
 <!--and [RobOT: Robustness-Oriented Testing for Deep Learning Systems](https://doi.org/10.1109/ICSE43902.2021.00038) (ICSE'21). -->
 
@@ -33,7 +33,7 @@ nohup jupyter notebook --ip 0.0.0.0 &
 
 ## Files
 - #### **`Robustness`: Experiments for Model Robustness Property**
-   - **Datasets**: MNIST (image) / FASHION (image) / CIFAR-10 (image) / SVHN (image) 
+   - **Datasets**: MNIST (image) / FASHION (image) / SVHN (image) / CIFAR-10 (image)
 - #### **`Fairness`: Experiments for Model Fairness Property**
    - **Datasets**: Census (tabular) / Credit (tabular) / Bank (tabular) / FairFace (image)    
 - #### `utils`: Utils for figure plotting
