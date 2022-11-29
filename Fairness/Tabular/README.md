@@ -4,6 +4,9 @@ Python scripts can be run directly in the shell:
 ```shell
 nohup python ./model/model_operation.py --dataset census > train.log 2>&1 &
 ```
+```shell
+nohup python ./tutorials/fuzzing.py --dataset census --sens_param 8 > fuzz.log 2>&1 &
+```
 
 ### Datasets
 - Census Income  : https://www.kaggle.com/datasets/uciml/adult-census-income
