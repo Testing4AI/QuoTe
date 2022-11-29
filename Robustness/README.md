@@ -10,10 +10,10 @@ nohup python ./tutorials/select_retrain.py > retrain.log 2>&1 &
 ```
 
 ### Datasets
-- MNIST  : https://www.kaggle.com/datasets/uciml/adult-census-income
-- FASHION  : https://www.kaggle.com/datasets/uciml/german-credit
-- SVHN : https://www.kaggle.com/datasets/henriqueyamahata/bank-marketing
-- CIFAR-10       : https://github.com/joojs/fairface
+- MNIST  : http://yann.lecun.com/exdb/mnist/
+- FASHION  : https://github.com/zalandoresearch/fashion-mnist
+- SVHN : http://ufldl.stanford.edu/housenumbers/
+- CIFAR-10       : https://www.cs.toronto.edu/~kriz/cifar.html
 
 
 ### File Strucutures
