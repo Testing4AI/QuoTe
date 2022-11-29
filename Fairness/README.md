@@ -8,6 +8,13 @@ nohup python ./Tabular/model/model_operation.py --dataset census > training.log 
 nohup python ./FairFace/model/train_resnet50.py > training.log 2>&1 &
 ```
 
+### Datasets
+- Census Income  : https://www.kaggle.com/datasets/uciml/adult-census-income
+- German Credit  : https://www.kaggle.com/datasets/uciml/german-credit
+- Bank Marketing : https://www.kaggle.com/datasets/henriqueyamahata/bank-marketing
+- FairFace       : https://github.com/joojs/fairface
+
+
 ### Tabular Data (Census, Credit, Bank)
 ```shell
 ├── baseline            # baseline testing methods 
@@ -43,3 +50,5 @@ nohup python ./FairFace/model/train_resnet50.py > training.log 2>&1 &
     └── transform.py            # utilize GAN to transform images across attributes (Race)   
 └── utils               # helper functions
 ```
+
+
