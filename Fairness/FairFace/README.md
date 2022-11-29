@@ -10,7 +10,7 @@ python ./model/train_resnet50.py
 ```shell
 ├── cyclegan            # code for train the CycleGAN (semantic transformer)
 ├── data                # data process for CycleGAN
-├── datasets            # FairFace dataset
+├── datasets            # prepared dataset (FairFace)
 ├── model               # model structures and model training
 ├── tutorials           # scripts for our experiments
     ├── evaluate.py            # evaluate model clean accuracy  
