@@ -4,7 +4,7 @@ Official implementation of CycleGAN is available at: https://github.com/junyanz/
 
 Python scripts can be run directly in the shell:  
 ```shell
-nohup python ./model/train_resnet50.py > training.log 2>&1 &
+nohup python ./model/train_resnet50.py > train.log 2>&1 &
 ```
 
 ### File Structures 
