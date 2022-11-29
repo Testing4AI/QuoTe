@@ -13,6 +13,7 @@ nohup python ./FairFace/model/train_resnet50.py > training.log 2>&1 &
 - German Credit  : https://www.kaggle.com/datasets/uciml/german-credit
 - Bank Marketing : https://www.kaggle.com/datasets/henriqueyamahata/bank-marketing
 - FairFace       : https://github.com/joojs/fairface
+- BUPT-Transferface      : http://whdeng.cn/RFW/Trainingdataste.html
 
 
 ### Tabular Data (Census, Credit, Bank)
