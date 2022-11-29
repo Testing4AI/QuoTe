@@ -1,14 +1,32 @@
-1. Generate Discriminatory Sample Pairs 
+## Fairness Experiments 
 
-2. Test Case Selection
+Python scripts can be run directly in the shell:
+```shell
+nohup python ./Tabular/model/model_operation.py --dataset census > training.log 2>&1 &
+nohup python ./FairFace/model/train_resnet50.py > training.log 2>&1 &
+```
 
-3. Test Case Generation
+### Tabular Data (CENSUS, CREDIT, BANK)
+```shell
+├── baseline            # baseline testing methods 
+├── clusters            # clusters for testing
+├── data                # data process
+├── datasets            # prepared tabular datasets 
+├── model               # model structures and train models
+├── trained_models      # trained example models 
+├── tutorials           # scripts for our experiments
+    ├── evaluate_fairness.py   # evaluate model empirical fairness
+    ├── fuzzing.py             # generate unfair samples
+    ├── gen_ds.py              # generate discriminatory sample pairs
+    ├── metrics.py             # testing metrics  
+    ├── quote.py               # iteratively testing for enhacing model fairness to reach the requirement.  
+    ├── select_retrain.py      # select test cases and retrain the model to enhance fairness
+    └── utils.py               # local helper functions
+└── utils               # global helper functions
+```
 
-4. running script quote.py  
 
-
-
-### FairFace
+### Image Data (FairFace)
 ```shell
 ├── cyclegan            # code for train the CycleGAN (semantic transformer)
 ├── data                # data process for CycleGAN
