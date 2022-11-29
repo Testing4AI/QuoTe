@@ -8,12 +8,12 @@ nohup python ./Tabular/model/model_operation.py --dataset census > training.log 
 nohup python ./FairFace/model/train_resnet50.py > training.log 2>&1 &
 ```
 
-### Tabular Data (CENSUS, CREDIT, BANK)
+### Tabular Data (Census, Credit, Bank)
 ```shell
 ├── baseline            # baseline testing methods 
 ├── clusters            # clusters for testing
 ├── data                # data process
-├── datasets            # prepared tabular datasets 
+├── datasets            # prepared tabular datasets (Census, Credit, Bank)
 ├── model               # model structures and train models
 ├── trained_models      # trained example models 
 ├── tutorials           # scripts for our experiments
