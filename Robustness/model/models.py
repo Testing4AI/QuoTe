@@ -160,3 +160,5 @@ def resnet_v1(input_shape, depth, num_classes=10):
     # Instantiate model.
     model = Model(inputs=inputs, outputs=outputs)
     return model   
+
+
