@@ -44,7 +44,7 @@ nohup jupyter notebook --ip 0.0.0.0 &
 ## To Run
 - See the `README.md` in each directory for a quick start. 
 - Example models are provided in the `trained_models` directory. 
-- Scripts for experiments are provided in the `tutorials` directory. 
+- Python scripts for experiments are provided in the `tutorials` directory. 
 
 
 ## Publications 
