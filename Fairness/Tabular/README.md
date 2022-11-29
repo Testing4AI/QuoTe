@@ -6,9 +6,9 @@ nohup python ./model/model_operation.py --dataset census > training.log 2>&1 &
 ```
 
 ### Datasets
-Census Income  : https://www.kaggle.com/datasets/uciml/adult-census-income
-German Credit  : https://www.kaggle.com/datasets/uciml/german-credit
-Bank Marketing : https://www.kaggle.com/datasets/henriqueyamahata/bank-marketing
+- Census Income  : https://www.kaggle.com/datasets/uciml/adult-census-income
+- German Credit  : https://www.kaggle.com/datasets/uciml/german-credit
+- Bank Marketing : https://www.kaggle.com/datasets/henriqueyamahata/bank-marketing
 
 
 ### File Structures 
