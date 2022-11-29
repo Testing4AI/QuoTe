@@ -31,4 +31,3 @@ To deactivate the virtual environment, type the following command. Then, ```(ven
 (venv) $ deactivate
 ```
 
-
