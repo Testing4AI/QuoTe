@@ -17,7 +17,7 @@ nohup python ./tutorials/fuzzing.py --dataset census --sens_param 8 > fuzz.log 2
 ### File Structures 
 ```shell
 ├── baseline            # baseline testing methods 
-├── clusters            # clusters for testing
+├── clusters            # clusters calculate
 ├── data                # data process
 ├── datasets            # prepared tabular datasets 
 ├── model               # model structures and train models
