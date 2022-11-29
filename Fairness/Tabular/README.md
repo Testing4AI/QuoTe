@@ -1,19 +1,26 @@
-Code for tubular data 
-Files 
+## Fairness Experiments (Tabular Data)
 
-
-
+Python scripts can be run directly in the shell:  
 ```shell
-├── baseline
-├── clusters
-├── data
-├── datasets
-├── model
-├── trained_models
-├── tutorials
-    ├── attack.py
-    ├── robot.py
-    └── gen_adv.py
-├── utils
-└── metrics.py
+nohup python ./model/model_operation.py --dataset census > training.log 2>&1 &
 ```
+
+### File Structures 
+```shell
+├── baseline            # baseline testing methods 
+├── clusters            # clusters for testing
+├── data                # data process
+├── datasets            # prepared tabular datasets 
+├── model               # model structures and train models
+├── trained_models      # trained example models 
+├── tutorials           # scripts for our experiments
+    ├── evaluate_fairness.py   # evaluate model empirical fairness
+    ├── fuzzing.py             # generate unfair samples
+    ├── gen_ds.py              # generate discriminatory sample pairs
+    ├── metrics.py             # testing metrics  
+    ├── quote.py               # iteratively testing for enhacing model fairness to reach the requirement.  
+    ├── select_retrain.py      # select test cases and retrain the model to enhance fairness
+    └── utils.py               # local helper functions
+└── utils               # global helper functions
+```
+
