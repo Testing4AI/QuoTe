@@ -19,7 +19,7 @@ nohup python ./FairFace/model/train_resnet50.py > train.log 2>&1 &
 ### Tabular Data (Census, Credit, Bank)
 ```shell
 ├── baseline            # baseline testing methods 
-├── clusters            # clusters for testing
+├── clusters            # clusters calculate
 ├── data                # data process
 ├── datasets            # prepared tabular datasets (Census, Credit, Bank)
 ├── model               # model structures and train models
