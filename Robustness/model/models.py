@@ -6,6 +6,9 @@ from tensorflow.keras.regularizers import l2
 from tensorflow.keras.models import Model
 
 
+# ------------------------------------
+#  Lenet-1,5; ConvNet-1,2; ResNet-20;
+# ------------------------------------
 
 def Lenet1(input_shape=(28, 28, 1)):
     input_tensor = keras.layers.Input(shape=input_shape)
