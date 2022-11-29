@@ -15,8 +15,8 @@
 ├── model
 ├── trained_models
 ├── tutorials
-    ├── attack.py
-    ├── robot.py
-    └── gen_adv.py
+    ├── attack.py   # implementation of traditional adversarial attacks, including FGSM and PGD. 
+    ├── robot.py    # iteratively testing for enhacing model robustness to reach the requirement.  
+    └── gen_adv.py  # generate adversarial examples automatically. 
 ```
 
