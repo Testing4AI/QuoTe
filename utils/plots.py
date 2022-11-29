@@ -2,16 +2,15 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-import os
-os.environ["CUDA_VISIBLE_DEVICES"]="-1" 
 
 
-
+# ----------------------------------
+#  Plot Kernel Density Distribution
+# ----------------------------------
 
 def plot_fol_distribution(v1, v2, v3):
     """
     For RQ1;
-    
     args:
         v1, v2, v3: FOL value vectors
     """
@@ -37,11 +36,13 @@ def plot_fol_distribution(v1, v2, v3):
     
     
     
+# ------------------------------------------
+#  Plot Selection and Property Improvements
+# ------------------------------------------   
     
 def plot_selection(avg1, std1):
     """
     For RQ2; 
-    
     args:
         avg1, std1: average and deviation value vectors
     """
@@ -56,7 +57,7 @@ def plot_selection(avg1, std1):
     
     colormap = ['r', 'limegreen', 'darkorange', 'dodgerblue']
     
-    ## BSET
+    ## For BE-ST 
     avg = np.array(avg1)*100
     std = np.array(std1)*100
     r1 = list(map(lambda x: x[0]-x[1], zip(best_avg, best_std)))
