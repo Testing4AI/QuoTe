@@ -22,7 +22,7 @@ nohup python ./tutorials/gen_ds.py > gends.log 2>&1 &
     ├── gen_ds.py              # generate discriminatory sample pairs (Gradient, Random, Gaussian)
     ├── metrics.py             # testing metrics  
     ├── select_retrain.py      # select test cases and retrain the model to enhance fairness
-    └── transform.py           # utilize GAN to transform images across attributes (Race)   
+    └── transform.py           # utilize transformer to transform images across attributes (Race)   
 └── utils               # helper functions
 ```
 
