@@ -18,19 +18,17 @@ nohup python ./tutorials/select_retrain.py > retrain.log 2>&1 &
 
 ### File Strucutures
 ```shell
-├── CIFAR-10
-├── FASHION
-├── MNIST
-├── SVHN
-├── baseline        # baseline testing methods
-├── model
-├── trained_models
-├── tutorials
-    ├── attack.py   # implementation of traditional adversarial attacks, including FGSM and PGD. 
-    ├── robot.py    # iteratively testing for enhacing model robustness to reach the requirement.  
-    └── gen_adv.py  # generate adversarial examples automatically. 
+├── baseline            # baseline testing methods
+├── model               # model structures and train models  
+├── trained_models      # trained example models. 
+├── tutorials           # scripts for our experiments   
+    ├── attack.py                # implementation of traditional adversarial attacks, including FGSM and PGD. 
+    ├── evaluate_robustness.py   # evaluate model empirical robustness   
+    ├── fuzzing.py               # generate test cases
+    ├── gen_adv.py               # generate adversarial examples 
+    ├── metrics.py               # testing metrics  
+    ├── robot.py                 # iteratively testing for enhacing model robustness to reach the requirement
+    └── select_retrain.py        # select test cases and retrain the model to enhance robustness
 ```
-
-
 
 
