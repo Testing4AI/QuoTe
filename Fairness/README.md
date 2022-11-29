@@ -49,7 +49,7 @@ nohup python ./FairFace/model/train_resnet50.py > training.log 2>&1 &
     ├── metrics.py              # testing metrics  
     ├── select_retrain.py       # select test cases and retrain the model to enhance fairness
     └── transform.py            # utilize GAN to transform images across attributes (Race)   
-└── utils               # helper functions
+└── utils               # global helper functions
 ```
 
 
