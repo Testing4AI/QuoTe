@@ -12,7 +12,7 @@ nohup python ./tutorials/gen_ds.py > gends.log 2>&1 &
 
 ### File Structures 
 ```shell
-├── cyclegan            # code for train the CycleGAN (semantic transformer)
+├── cyclegan            # code for training the CycleGAN (semantic transformer)
 ├── data                # data process for CycleGAN
 ├── datasets            # prepared dataset (FairFace)
 ├── model               # model structures and train models
