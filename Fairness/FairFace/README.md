@@ -4,7 +4,7 @@ Official implementation of CycleGAN is available at: https://github.com/junyanz/
 
 ### File Structures 
 ```shell
-├── cyclegan            # code for train the semantic transformer
+├── cyclegan            # code for train the CycleGAN (semantic transformer)
 ├── data                # data process for CycleGAN
 ├── datasets            # FairFace dataset
 ├── model               # model structures and model training
@@ -16,4 +16,9 @@ Official implementation of CycleGAN is available at: https://github.com/junyanz/
     ├── select_retrain.py      # select test cases and retrain the model to enhance fairness
     └── transform.py           # utilize GAN to transform images across attributes (Race)   
 └── utils               # helper functions
+```
+
+Python scripts can be run directly using the following command: 
+```shell
+python ./model/train_resnet50.py  
 ```
