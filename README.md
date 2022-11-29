@@ -22,7 +22,7 @@ $ pip install ipykernel
 $ python -m ipykernel install --name tf2-gpu
 ```
 
-To run jupyter notebook on a sever:  
+To run the jupyter notebook on a sever:  
 ```shell
 nohup jupyter notebook --ip 0.0.0.0 & 
 ```
