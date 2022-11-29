@@ -17,13 +17,13 @@ nohup python ./FairFace/model/train_resnet50.py > training.log 2>&1 &
 ├── model               # model structures and train models
 ├── trained_models      # trained example models 
 ├── tutorials           # scripts for our experiments
-    ├── evaluate_fairness.py   # evaluate model empirical fairness
-    ├── fuzzing.py             # generate unfair samples
-    ├── gen_ds.py              # generate discriminatory sample pairs
-    ├── metrics.py             # testing metrics  
-    ├── quote.py               # iteratively testing for enhacing model fairness to reach the requirement.  
-    ├── select_retrain.py      # select test cases and retrain the model to enhance fairness
-    └── utils.py               # local helper functions
+    ├── evaluate_fairness.py    # evaluate model empirical fairness
+    ├── fuzzing.py              # generate unfair samples
+    ├── gen_ds.py               # generate discriminatory sample pairs
+    ├── metrics.py              # testing metrics  
+    ├── quote.py                # iteratively testing for enhacing model fairness to reach the requirement.  
+    ├── select_retrain.py       # select test cases and retrain the model to enhance fairness
+    └── utils.py                # local helper functions
 └── utils               # global helper functions
 ```
 
@@ -35,11 +35,11 @@ nohup python ./FairFace/model/train_resnet50.py > training.log 2>&1 &
 ├── datasets            # prepared dataset (FairFace)
 ├── model               # model structures and train models
 ├── tutorials           # scripts for our experiments
-    ├── evaluate.py            # evaluate model clean accuracy  
-    ├── evaluate_fairness.py   # evaluate model empirical fairness
-    ├── gen_ds.py              # generate discriminatory sample pairs (Gradient, Random, Gaussian)
-    ├── metrics.py             # testing metrics  
-    ├── select_retrain.py      # select test cases and retrain the model to enhance fairness
-    └── transform.py           # utilize GAN to transform images across attributes (Race)   
+    ├── evaluate.py             # evaluate model clean accuracy  
+    ├── evaluate_fairness.py    # evaluate model empirical fairness
+    ├── gen_ds.py               # generate discriminatory sample pairs (Gradient, Random, Gaussian)
+    ├── metrics.py              # testing metrics  
+    ├── select_retrain.py       # select test cases and retrain the model to enhance fairness
+    └── transform.py            # utilize GAN to transform images across attributes (Race)   
 └── utils               # helper functions
 ```
