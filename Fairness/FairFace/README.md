@@ -14,7 +14,7 @@ nohup python ./tutorials/gen_ds.py > gends.log 2>&1 &
 ```shell
 ├── cyclegan            # train CycleGAN (semantic transformer)
 ├── data                # data process 
-├── datasets            # prepared dataset (FairFace)
+├── datasets            # prepared image datasets (FairFace)
 ├── model               # model structures and train models
 ├── tutorials           # scripts for our experiments
     ├── evaluate.py             # evaluate model clean accuracy  
