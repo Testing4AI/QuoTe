@@ -18,6 +18,10 @@ nohup python ./tutorials/select_retrain.py > retrain.log 2>&1 &
 
 ### File Strucutures
 ```shell
+├── CIFAR-10            # CIFAR-10 dataset process and model training 
+├── FASHION             # FASHION dataset process and model training 
+├── MNIST               # MNIST dataset process and model training 
+├── SVHN                # SVHN dataset process and model training 
 ├── baseline            # baseline testing methods
 ├── model               # model structures and train models  
 ├── trained_models      # trained example models. 
