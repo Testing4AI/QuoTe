@@ -63,7 +63,7 @@ nohup jupyter notebook --ip 0.0.0.0 &
 }
 ```
 ```
-@inproceedings{robot2011,
+@inproceedings{robot2021,
   author    = {Jingyi Wang and
                Jialuo Chen and
                Youcheng Sun and
