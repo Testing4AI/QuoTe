@@ -32,18 +32,16 @@ def load_mnist(path="./mnist.npz"):
     
     return x_train, x_test, y_train, y_test
 
+# load dataset and model 
 
 path = "./mnist.npz"
 x_train, x_test, y_train, y_test = load_mnist(path)
-
-
-# load your model 
 model = keras.models.load_model("./Lenet5_mnist.h5")
 
 fgsm = FGSM(model, ep=0.3, isRand=True)
 pgd = PGD(model, ep=0.3, epochs=10, isRand=True)
 
-# generate adversarial examples at once. 
+# generate and save adversarial examples at once. 
 advs, labels, fols, ginis = fgsm.generate(x_train, y_train)
 np.savez('./FGSM_TrainFull.npz', advs=advs, labels=labels, fols=fols, ginis=ginis)
 
