@@ -3,7 +3,7 @@
 Python scripts can be run directly in the shell:
 ```shell
 nohup python ./Tabular/model/model_operation.py --dataset census > train.log 2>&1 &
-nohup python ./Tabular/tutorials/fuzzing.py --dataset census --sens_param 8 > fuzz.log 2>&1 &
+nohup python ./Tabular/tutorials/fuzzing.py --dataset census > fuzz.log 2>&1 &
 ```
 
 ```shell
