@@ -35,6 +35,7 @@ nohup python ./FairFace/model/train_resnet50.py > train.log 2>&1 &
 ```
 
 
+
 ### Image Data (FairFace)
 ```shell
 ├── cyclegan            # train CycleGAN (semantic transformer)
