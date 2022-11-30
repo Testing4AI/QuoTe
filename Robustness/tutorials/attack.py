@@ -18,9 +18,18 @@ class FGSM:
         
     def generate(self, x, y, randRate=1):
         """
-        x: clean inputs, shape of x: [batch_size, width, height, channel] 
-        y: ground truth, one hot vectors, shape of y: [batch_size, N_classes] 
+        args:
+            x: clean inputs, shape of x: [batch_size, width, height, channel] 
+            y: ground truth, one hot vectors, shape of y: [batch_size, N_classes] 
+            randRate: initial perturbation 
+        
+        return: 
+            x_adv: adversarial examples
+            target: ground-truth labels
+            fols: FOL-Linf values
+            ginis: 1-DeepGini values
         """
+        
         fols = []
         target = tf.constant(y)
         
@@ -79,8 +88,16 @@ class PGD:
         
     def generate(self, x, y, randRate=1):
         """
-        x: clean inputs, shape of x: [batch_size, width, height, channel] 
-        y: ground truth, one hot vectors, shape of y: [batch_size, N_classes] 
+        args:
+            x: clean inputs, shape of x: [batch_size, width, height, channel] 
+            y: ground truth, one hot vectors, shape of y: [batch_size, N_classes] 
+            randRate: initial perturbation 
+        
+        return: 
+            x_adv: adversarial examples
+            target: ground-truth labels
+            fols: FOL-Linf values
+            ginis: 1-DeepGini values
         """
         fols = []
         target = tf.constant(y)
