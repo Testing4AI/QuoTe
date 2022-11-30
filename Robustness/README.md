@@ -23,7 +23,7 @@ nohup python ./tutorials/select_retrain.py > retrain.log 2>&1 &
 ├── MNIST               # MNIST dataset process and model training 
 ├── SVHN                # SVHN dataset process and model training 
 ├── baseline            # baseline testing methods
-├── model               # model structures and train models  
+├── model               # model structures 
 ├── trained_models      # trained example models. 
 ├── tutorials           # scripts for our experiments   
     ├── attack.py                # batch adversarial attacks (FGSM and PGD)
