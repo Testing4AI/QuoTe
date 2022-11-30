@@ -5,7 +5,7 @@ import numpy as np
 import time
 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"]="-1" 
+os.environ["CUDA_VISIBLE_DEVICES"]="0" 
 
 gpus = tf.config.experimental.list_physical_devices('GPU')
 if gpus:
@@ -36,7 +36,6 @@ def load_mnist(path="./mnist.npz"):
 
 path = "./mnist.npz"
 x_train, x_test, y_train, y_test = load_mnist(path)
-
 model = keras.models.load_model("./Lenet5_mnist.h5")
 
 
@@ -44,8 +43,7 @@ seeds = random.sample(list(range(x_train.shape[0])), 1000)
 images = x_train[seeds]
 labels = y_train[seeds]
 
-
-# some training samples is static, i.e., grad=<0>, hard to generate. 
+# some training samples is static, i.e., grad=<0>. 
 seeds_filter = []
 gen_img = tf.Variable(images)
 with tf.GradientTape() as g:
@@ -55,6 +53,10 @@ with tf.GradientTape() as g:
 fols = np.linalg.norm((grads.numpy()+1e-20).reshape(images.shape[0], -1), ord=2, axis=1)
 seeds_filter = np.where(fols > 1e-3)[0]
 
+
+# -----------------------
+#  Start Fuzzing Process
+# -----------------------
 
 start_t = time.time()
 lr = 0.1
@@ -106,7 +108,6 @@ for idx in seeds_filter:
             gen_index = np.argmax(model(gen_img)[0]) 
             if gen_index != orig_index:
                 total_sets.append((fol, gen_img.numpy(), labels[idx]))
-
 
 fols = np.array([item[0] for item in total_sets])
 advs = np.array([item[1].reshape(28,28,1) for item in total_sets])
