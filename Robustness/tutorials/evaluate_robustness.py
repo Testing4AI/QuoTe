@@ -40,19 +40,5 @@ for num in sNums:
         lfp, afp = best_model.evaluate(fp_test, fp_test_labels, verbose=0)
         acc_fp[i].append(afp)
 
-
-# colormap = ['r','limegreen', 'dodgerblue']
-# plt.figure(figsize=(8,6))
-# x = [i/max(sNums) for i in sNums]
-# for i in range(len(strategies)):
-#     plt.plot(x, acc_fp[i],'o-', label=strategies[i], color=colormap[i], linewidth=3, markersize=8)
-
-# plt.title("MNIST-ATTACK", fontsize=20)
-# plt.xlabel("# Percentage of test cases", fontsize=20)
-# plt.ylabel("Robustness", fontsize=20)
-# plt.xticks(x, [0.5,1,1.5,2,3,4,5,6,8,10],fontsize=15)
-# plt.yticks(fontsize=15)
-# plt.legend(fontsize=15)
-
-# fig = plt.gcf()
-# fig.savefig('./mnist_attack_robustness.pdf')
+        
+        
