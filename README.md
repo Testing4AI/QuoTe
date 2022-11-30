@@ -32,17 +32,17 @@ nohup jupyter notebook --ip 0.0.0.0 &
 
 
 ## Files
-- #### **`Robustness`: Experiments for Model Robustness Property**
+- #### **`Robustness`: Experiments for Robustness Property**
    - **Datasets**: MNIST (image) / FASHION (image) / SVHN (image) / CIFAR-10 (image)
-- #### **`Fairness`: Experiments for Model Fairness Property**
+- #### **`Fairness`: Experiments for Fairness Property**
    - **Datasets**: Census (tabular) / Credit (tabular) / Bank (tabular) / FairFace (image)    
-- #### `utils`: Utils for figure plotting
+- #### `utils`: Utils for plotting figures
 
 <!-- **Reference:**  -->
 
 
 ## To Run
-- See the `README.md` in each directory for a quick start. 
+- See the `README.md` file in each directory for a quick start. 
 - Example models are provided in the `trained_models` directory. 
 - Python scripts for experiments are provided in the `tutorials` directory. 
 
