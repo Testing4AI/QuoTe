@@ -37,8 +37,8 @@ nohup python ./FairFace/model/train_resnet50.py > train.log 2>&1 &
 
 ### Image Data (FairFace)
 ```shell
-├── cyclegan            # code for training the CycleGAN (semantic transformer)
-├── data                # data process for CycleGAN
+├── cyclegan            # train CycleGAN (semantic transformer)
+├── data                # data process 
 ├── datasets            # prepared dataset (FairFace)
 ├── model               # model structures and train models
 ├── tutorials           # scripts for our experiments
