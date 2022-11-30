@@ -24,14 +24,14 @@ nohup python ./tutorials/select_retrain.py > retrain.log 2>&1 &
 ├── SVHN                # SVHN dataset process and model training 
 ├── baseline            # baseline testing methods
 ├── model               # model structures 
-├── trained_models      # trained example models. 
+├── trained_models      # trained example models 
 ├── tutorials           # scripts for our experiments   
     ├── attack.py                # batch adversarial attacks (FGSM and PGD)
     ├── evaluate_robustness.py   # evaluate model empirical robustness   
     ├── fuzzing.py               # generate test cases
     ├── gen_adv.py               # generate adversarial examples 
     ├── metrics.py               # testing metrics  
-    ├── robot.py                 # iteratively testing for enhacing model robustness to reach the requirement
+    ├── robot.py                 # iteratively testing to enhance model robustness to reach the requirement
     └── select_retrain.py        # select test cases and retrain the model to enhance robustness
 ```
 
