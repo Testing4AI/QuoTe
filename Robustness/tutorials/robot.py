@@ -18,7 +18,6 @@ if gpus:
         print(e)
         
     
-
 def select(values, n, s='best', k=100):
     """
     n: the number of selected test cases. 
@@ -64,16 +63,12 @@ def load_mnist(path="./mnist.npz"):
     x_train, y_train = f['x_train'], f['y_train']
     x_test, y_test = f['x_test'], f['y_test']
     f.close()
-
     x_train = x_train.reshape(x_train.shape[0], 28, 28, 1)
     x_test = x_test.reshape(x_test.shape[0], 28, 28, 1)
-
     x_train = x_train.astype('float32') / 255.
     x_test = x_test.astype('float32') / 255.
-
     y_train = keras.utils.to_categorical(y_train, 10)
     y_test = keras.utils.to_categorical(y_test, 10)
-    
     return x_train, x_test, y_train, y_test
 
 
@@ -90,14 +85,11 @@ model = keras.models.load_model(model_path)
 
 with np.load("./FGSM_Test.npz") as f:
     fgsm_test, fgsm_test_labels = f['advs'], f['labels']
-
 with np.load("./PGD_Test.npz") as f:
     pgd_test, pgd_test_labels = f['advs'], f['labels']
 
-
 advx_test = np.concatenate((fgsm_test, pgd_test))
 advy_test = np.concatenate((fgsm_test_labels, pgd_test_labels))
-
 
 
 # --------------
@@ -108,7 +100,7 @@ EPOCH = 20    # retraining budget
 REQ = 0.8     # 80% empirical robustness requirement
 
 for ep in range(EPOCH):
-
+    
     _, robustness = model.evaluate(advx_test, advy_test, verbose=0)
     if  robustness > REQ:
         print("Robustness requirement is already reached: %s", str(robustness))
