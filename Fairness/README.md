@@ -18,7 +18,7 @@ nohup python ./FairFace/model/train_resnet50.py > train.log 2>&1 &
 ### Tabular Data (Census, Credit, Bank)
 ```shell
 ├── baseline            # baseline testing methods 
-├── clusters            # clusters calculate
+├── clusters            # data clusters 
 ├── data                # data process
 ├── datasets            # prepared tabular datasets (Census, Credit, Bank)
 ├── model               # model structures and train models
@@ -28,7 +28,7 @@ nohup python ./FairFace/model/train_resnet50.py > train.log 2>&1 &
     ├── fuzzing.py              # generate unfair samples
     ├── gen_ds.py               # generate discriminatory sample pairs
     ├── metrics.py              # testing metrics  
-    ├── quote.py                # iteratively testing for enhacing model fairness to reach the requirement
+    ├── quote.py                # iteratively testing to enhance model fairness to reach the requirement
     ├── select_retrain.py       # select test cases and retrain the model to enhance fairness
     └── utils.py                # local helper functions
 └── utils               # global helper functions
@@ -47,7 +47,7 @@ nohup python ./FairFace/model/train_resnet50.py > train.log 2>&1 &
     ├── gen_ds.py               # generate discriminatory sample pairs (Gradient, Random, Gaussian)
     ├── metrics.py              # testing metrics  
     ├── select_retrain.py       # select test cases and retrain the model to enhance fairness
-    └── transform.py            # utilize transformer to transform images across attributes (Race)   
+    └── transform.py            # utilize transformer to transform images across attributes 
 └── utils               # global helper functions
 ```
 
