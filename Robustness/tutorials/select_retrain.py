@@ -17,7 +17,6 @@ if gpus:
         
     
 
-
 def select(values, n, s='best', k=100):
     """
     n: the number of selected test cases. 
@@ -49,7 +48,6 @@ def select(values, n, s='best', k=100):
                 indexes.append(index)
         return np.concatenate(np.array(indexes))
 
-    # This is for gini strategy. There is little difference from DeepGini paper. See function ginis() in metrics.py 
     else: 
         return ranks[:n]  
     
@@ -73,16 +71,12 @@ def load_mnist(path="./mnist.npz"):
     x_train, y_train = f['x_train'], f['y_train']
     x_test, y_test = f['x_test'], f['y_test']
     f.close()
-
     x_train = x_train.reshape(x_train.shape[0], 28, 28, 1)
     x_test = x_test.reshape(x_test.shape[0], 28, 28, 1)
-
     x_train = x_train.astype('float32') / 255.
     x_test = x_test.astype('float32') / 255.
-
     y_train = keras.utils.to_categorical(y_train, 10)
     y_test = keras.utils.to_categorical(y_test, 10)
-    
     return x_train, x_test, y_train, y_test
 
 
@@ -108,7 +102,6 @@ fp_train = np.concatenate((fgsm_train, pgd_train))
 fp_train_labels = np.concatenate((fgsm_train_labels, pgd_train_labels))
 fp_train_fols = np.concatenate((fgsm_train_fols, pgd_train_fols))
 fp_train_ginis = np.concatenate((fgsm_train_ginis, pgd_train_ginis))
-
 fp_test = np.concatenate((fgsm_test, pgd_test))
 fp_test_labels = np.concatenate((fgsm_test_labels, pgd_test_labels))
 
@@ -117,7 +110,6 @@ sNums = [600*i for i in [1,2,3,4,6,8,10,12,16,20]]
 strategies = ['best', 'kmst', 'gini']
 acc_clean = [[] for i in range(len(strategies))]
 acc_fp = [[] for i in range(len(strategies))]
-
 
 for num in sNums:
     for i in range(len(strategies)):
@@ -144,23 +136,13 @@ for num in sNums:
         model.fit(x_train_mix, y_train_mix, epochs=10, batch_size=64, verbose=0, callbacks=callbacks,
                  validation_data=(fp_test, fp_test_labels))
         
-        best_model = keras.models.load_model(model_path)
-        _, aclean = best_model.evaluate(x_test, y_test, verbose=0)
-        _, afp = best_model.evaluate(fp_test, fp_test_labels, verbose=0)
+#         best_model = keras.models.load_model(model_path)
+#         _, aclean = best_model.evaluate(x_test, y_test, verbose=0)
+#         _, afp = best_model.evaluate(fp_test, fp_test_labels, verbose=0)
        
-        acc_clean[i].append(aclean)
-        acc_fp[i].append(afp)
+#         acc_clean[i].append(aclean)
+#         acc_fp[i].append(afp)
         
         
-        
-
-
-        
-        
-
-        
-
-
-
 
 
