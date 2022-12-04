@@ -1,5 +1,6 @@
 ## Fairness Experiments 
 
+
 Python scripts can be run directly in the shell:
 ```shell
 nohup python ./Tabular/model/model_operation.py --dataset census > train.log 2>&1 &
@@ -10,6 +11,7 @@ nohup python ./Tabular/tutorials/fuzzing.py --dataset census > fuzz.log 2>&1 &
 nohup python ./FairFace/model/train_resnet50.py > train.log 2>&1 &
 nohup python ./FairFace/tutorials/gen_ds.py > gends.log 2>&1 &
 ```
+
 
 ### Datasets
 - Census Income  : https://www.kaggle.com/datasets/uciml/adult-census-income
