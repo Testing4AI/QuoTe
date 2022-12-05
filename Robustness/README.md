@@ -1,6 +1,5 @@
 ## Robustness Experiments 
 
-
 Python scripts can be run directly in the shell:
 ```shell
 nohup python ./MNIST/train_model.py > train.log 2>&1 &
