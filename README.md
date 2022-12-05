@@ -2,8 +2,6 @@
  
 This repository contains code for the journal paper "QuoTe: Quality-oriented Testing for Deep Learning Systems", an extension of our previous work [RobOT](https://doi.org/10.1109/ICSE43902.2021.00038) (ICSE'21). 
 
-<!--and [RobOT: Robustness-Oriented Testing for Deep Learning Systems](https://doi.org/10.1109/ICSE43902.2021.00038) (ICSE'21). -->
-
 
 ## Prerequisite (Py3 & TF2) 
 The code is run successfully using **Python 3.6.10** and **Tensorflow 2.2.0**. 
