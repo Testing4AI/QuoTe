@@ -62,7 +62,7 @@ def plot_selection(avg1, std1):
     std = np.array(std1)*100
     r1 = list(map(lambda x: x[0]-x[1], zip(avg, std)))
     r2 = list(map(lambda x: x[0]+x[1], zip(avg, std)))
-    plt.plot(xs, best_avg, color=colormap[0], label="BE-ST", marker='o', linewidth=2, markersize=7, alpha=0.8)
+    plt.plot(xs, avg, color=colormap[0], label="BE-ST", marker='o', linewidth=2, markersize=7, alpha=0.8)
     plt.fill_between(xs, r1, r2, color=colormap[0], alpha=0.2)
     plt.legend(fontsize=18)
     plt.tight_layout()
