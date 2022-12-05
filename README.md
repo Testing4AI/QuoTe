@@ -53,7 +53,7 @@ nohup jupyter notebook --ip 0.0.0.0 &
   author    = {Jialuo Chen, Jingyi Wang, Xingjun Ma, Youcheng Sun, Jun Sun, Peixin Zhang, and Peng Cheng},
   title     = {QuoTe: Quality-oriented Testing for Deep Learning Systems},
   booktitle = {},
-  year      = {2022},
+  year      = {2022}
 }
 ```
 ```
@@ -61,7 +61,7 @@ nohup jupyter notebook --ip 0.0.0.0 &
   author    = {Jingyi Wang, Jialuo Chen, Youcheng Sun, Xingjun Ma, Dongxia Wang, Jun Sun, and Peng Cheng},
   title     = {RobOT: Robustness-Oriented Testing for Deep Learning Systems},
   booktitle = {43rd IEEE/ACM International Conference on Software Engineering, ICSE 2021, Madrid, Spain, 22-30 May 2021},
-  year      = {2021},
+  year      = {2021}
 }
 ```
 
