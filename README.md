@@ -1,6 +1,6 @@
 # QuoTe: Quality-oriented Testing for DL Systems
  
-This repository contains code for the journal paper "QuoTe: Quality-oriented Testing for Deep Learning Systems", an extension of our previous work [RobOT](https://doi.org/10.1109/ICSE43902.2021.00038) (ICSE'21). 
+This repository contains code for the journal paper "QuoTe: Quality-oriented Testing for Deep Learning Systems" (TOSEM), an extension of our previous work [RobOT](https://doi.org/10.1109/ICSE43902.2021.00038) (ICSE'21). 
 
 
 ## Prerequisite (Py3 & TF2) 
@@ -50,7 +50,7 @@ nohup jupyter notebook --ip 0.0.0.0 &
 @article{quote2022,
   author    = {Jialuo Chen, Jingyi Wang, Xingjun Ma, Youcheng Sun, Jun Sun, Peixin Zhang, and Peng Cheng},
   title     = {QuoTe: Quality-oriented Testing for Deep Learning Systems},
-  booktitle = {},
+  booktitle = {ACM Transactions on Software Engineering and Methodology (TOSEM)},
   year      = {2022}
 }
 ```
