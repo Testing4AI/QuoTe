@@ -47,11 +47,11 @@ nohup jupyter notebook --ip 0.0.0.0 &
 
 ## Publications 
 ```
-@article{quote2022,
+@article{quote2023,
   author    = {Jialuo Chen, Jingyi Wang, Xingjun Ma, Youcheng Sun, Jun Sun, Peixin Zhang, and Peng Cheng},
   title     = {QuoTe: Quality-oriented Testing for Deep Learning Systems},
   booktitle = {ACM Transactions on Software Engineering and Methodology (TOSEM)},
-  year      = {2022}
+  year      = {2023}
 }
 ```
 ```
